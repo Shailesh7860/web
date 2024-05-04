@@ -8,15 +8,15 @@ if(isset($_POST['email'])&&$_POST['email'] != ''){
         $messageSubject = $_POST['subject'];
         $message = $_POST['message'];
 
-        $to = "shaileshsuvarna24@gmail.com"
-        $body = ""
+        $to = "shaileshsuvarna24@gmail.com";
+        $body = "";
 
         $body .= "From: ".$userName. "\r\n";
         $body .= "Email: ".$userEmail. "\r\n";
         $body .= "Message: ".$message. "\r\n";
 
-        mail($to,$messageSubject,$body)
-        echo 'Message Sent '
+        mail($to,$messageSubject,$body);
+        echo 'Message Sent ';
 
     }
     else{
